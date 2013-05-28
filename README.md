@@ -1,4 +1,4 @@
 SimpleRPG
 =========
 
-SimpleRPG on php
+SimpleRPG on php in OOP style.
