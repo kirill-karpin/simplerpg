@@ -1,0 +1,7 @@
+#left, #center, #right, #log {border:#CCC 1px solid; padding:5px 10px;}
+#left {float:left; width:200px;}
+#center {margin:0 240px;
+    text-align: center;}
+#right {float:right; width:200px;}
+#log {margin: 0 240px;
+    text-align: center;}

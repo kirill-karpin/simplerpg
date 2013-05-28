@@ -1,4 +1,4 @@
 SimpleRPG
 =========
 
-SimpleRPG on php in OOP style.
+Simple RPG game on PHP in OOP style.
