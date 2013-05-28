@@ -6,5 +6,5 @@ require_once '/app/Messages.php';
 require_once '/app/Combat.php';
 require_once '/app/AI.php';
 require_once '/app/DB.php';
-require_once '/app/Route.php';
+require_once '/app/core/Route.php';
 Route::start();
