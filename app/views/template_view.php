@@ -7,8 +7,8 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
 </head>
 <body>
-    <h1> Тест Тест Тест</h1>
-        <?php include 'app/views/'.$contentView; ?>
+    <h1> WELCOME! </h1>
+        <?php include './app/views/'.$contentView; ?>
 
 </body>
 </html>

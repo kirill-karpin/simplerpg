@@ -1,19 +1,4 @@
 <?php
-class Run {
-
-    public static function loadCombatForm(){
-
-    }
-
-    public static function loadLoginForm(){
-
-    }
-
-    public static function loadProfile(){
-
-
-    }
-
-}
-
+$routes = explode('/', $_SERVER['REQUEST_URI']);
+var_dump($routes);
 echo "test";

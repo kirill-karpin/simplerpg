@@ -1,7 +1,7 @@
 <?php
 ini_set('display_errors', 1);
-$rootDir = __DIR__;
-require_once $rootDir .'/app/bootstrap.php';
+$Dir = dirname(__FILE__);
+    require_once $Dir .'/app/bootstrap.php';
 
 
 
