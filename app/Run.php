@@ -15,3 +15,5 @@ class Run {
     }
 
 }
+
+echo "test";

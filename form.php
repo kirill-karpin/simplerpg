@@ -1,5 +1,5 @@
 <?php   
-include 'bootstrap.php';
+include '/app/bootstrap.php';
 
 $mob = CharactersFactory::createOrk();
 $player = CharactersFactory::createPlayer('kirill');
@@ -11,7 +11,9 @@ $arr=array(
     'ch2' => $p,
     'log' => $log
 );
-echo json_encode($arr);
+//echo json_encode($arr);
+
+
 
 
 

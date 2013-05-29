@@ -1,7 +1,5 @@
-
 <div id="content"></div>
 <div id="left">
-    <?="test"?>
 </div>
 
 <div id="right">
