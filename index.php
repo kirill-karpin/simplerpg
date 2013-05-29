@@ -1,5 +1,8 @@
 <?php
 ini_set('display_errors', 1);
-require_once 'app/bootstrap.php';
+$rootDir = __DIR__;
+require_once $rootDir .'/app/bootstrap.php';
+
+
 
 
