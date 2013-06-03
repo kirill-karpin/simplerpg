@@ -2,8 +2,8 @@ $(document).ready(function(){
     $('#combatForm').submit(function(){
         var str = $("form").serialize();
         $.ajax({
-            type: "POST",
-            url: "form.php",
+            type: "GET",
+            url: "combat.php",
             data:str,
             dataType:'json',
             success: function(html){

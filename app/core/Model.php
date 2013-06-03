@@ -1,4 +1,4 @@
 <?php
-    class Model {
+    class App_Core_Model {
 
 }

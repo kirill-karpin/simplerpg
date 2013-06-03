@@ -1,17 +1,10 @@
 <?php
 
-class View {
+class App_Core_View {
 
     function generate($contentView, $template_view, $data = null)
     {
-        /*
-        if(is_array($data)) {
-            // преобразуем элементы массива в переменные
-            extract($data);
-        }
-        */
-
-        include 'app/views/'.$template_view;
+       include APP.'/App/Views/'.$template_view;
     }
 
 }

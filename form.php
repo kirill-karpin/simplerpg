@@ -1,5 +1,5 @@
 <?php   
-include './app/bootstrap.php';
+//include './app/bootstrap.php';
 
 //$mob = CharactersFactory::createOrk();
 //$player = CharactersFactory::createPlayer('kirill');
@@ -15,6 +15,7 @@ include './app/bootstrap.php';
 
 
 $routes = explode('/', $_SERVER['REQUEST_URI']);
+echo $_SERVER['REQUEST_URI'];
 var_dump($routes);
 
 
