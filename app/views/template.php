@@ -8,7 +8,8 @@
 </head>
 <body>
     <h1> WELCOME! </h1>
-        <?php include APP .'/APP/views/'.$contentView; ?>
+
+    <?php include APP .'/App/Views/'.$contentView; ?>
 
 </body>
 </html>

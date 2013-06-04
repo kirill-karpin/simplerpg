@@ -19,6 +19,7 @@ class App_Controllers_Login extends App_Core_Controller {
             $this->view->generate('profile.php', 'template.php');
         } else {
             $this->view->generate('login.php', 'template.php');
+            echo "Incorrect login or password";
         };
 
     }
