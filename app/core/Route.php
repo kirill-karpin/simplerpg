@@ -17,7 +17,7 @@ class App_Core_Route {
         }
 
         if (!empty($_POST)){
-            $actionName = "getRequest";
+            $actionName = "postRequest";
         }
 
         $routes = explode('/', $link);
@@ -27,12 +27,9 @@ class App_Core_Route {
         }
         $controllerName = 'App_Controllers_'.$controllerName;
 
-
         $Controller = new $controllerName;
-        $action = $actionName;
-
-        if(method_exists($Controller, $action)){
-                   $Controller->$action();
+        if(method_exists($Controller, $actionName)){
+                   $Controller->$actionName();
         } else {
         // здесь также разумнее было бы кинуть исключение
            Route::ErrorPage404();

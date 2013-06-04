@@ -6,8 +6,20 @@ class App_Controllers_Login extends App_Core_Controller {
     }
 
      function  getRequest(){
-        App_Models_Login::checkLogin();
+        if (App_Models_Login::checkLoginGet()) {
+            $this->view->generate('profile.php', 'template.php');
+        } else {
+            $this->view->generate('login.php', 'template.php');
+        };
 
     }
 
+    function  postRequest(){
+        if (App_Models_Login::checkLoginPost()) {
+            $this->view->generate('profile.php', 'template.php');
+        } else {
+            $this->view->generate('login.php', 'template.php');
+        };
+
+    }
 }
