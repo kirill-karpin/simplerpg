@@ -6,25 +6,22 @@ class App_Core_Route {
         $actionName = 'index';
         $link = $_SERVER['REQUEST_URI'];
 
+        $routes = explode("/",$link);
 
-        if ( (preg_match_all('#(.*)\?#U',$link,$route)) > 0 ) {
+//        if ( (preg_match_all('#(.*)\/$#U',$link,$route)) > 0 ) {
+//
+//            $link = $route[1][0];
+//        };
 
-            $link = $route[1][0];
-        };
 
-        if (!empty($_GET)){
-            $actionName = "getRequest";
-        }
-
-        if (!empty($_POST)){
-            $actionName = "postRequest";
-        }
-
-        $routes = explode('/', $link);
-
-        if (!empty($routes[1])){
+        if (!empty($routes[1]) && (!stripos($routes[1], "XDEBUG_SESSION_START"))){
             $controllerName = ucfirst($routes[1]);
         }
+
+        if (!empty($routes[2])){
+            $actionName = $routes[2];
+        }
+
         $controllerName = 'App_Controllers_'.$controllerName;
 
         $Controller = new $controllerName;
