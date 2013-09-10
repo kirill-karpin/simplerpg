@@ -1,8 +1,6 @@
-<p>Имя персонажа</p> <?php ?>
-<p>Здоровье</p> <?php ?>
-<p>Атака</p> <?php ?>
-<p>Защита</p> <?php ?>
-<p>Опыт</p> <?php ?>
 
-
-
+<p>Имя персонажа<?php echo $this->params['name'];?> </p>
+<p>Здоровье <?php echo $this->params['health'];?></p>
+<p>Атака <?php echo $this->params['attack'];?></p>
+<p>Защита <?php echo $this->params['deffence'];?></p>
+<p>Опыт <?php echo $this->params['experience'];?></p>

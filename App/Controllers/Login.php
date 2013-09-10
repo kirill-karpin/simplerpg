@@ -20,7 +20,8 @@ class App_Controllers_Login extends App_Core_Controller {
 
 
         if (App_Models_Login::checkLogin($login,$password)){
-            $this->model = new App_Core_Model();
+            $model = new App_Models_Personage();
+            $this->view->params = $model->playerInfo();
             $this->view->generate('profile.php', 'template.php');
         }
     }
